@@ -34,7 +34,7 @@
 		pdftitle={\@title}, 
 		pdfauthor={\@author},
     	pdfsubject={Trabalho de Linguagem de programação em LaTeX},
-	    pdfcreator={GLR, LSO, PS, THN},
+	    pdfcreator={GLR, LSO, RM, RADA},
 		pdfkeywords={abnt}{latex}{abntex}{abntex2}{Linguagem de programação}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=black,          	% color of internal links
@@ -59,10 +59,11 @@
 % ---
 
 % --- Informações do documento ---
-\title{Apresentando Haskell}
-\author{Gustavo Lopes \and Lucas Santiago \and Pedro Souza \and Thiago Henriques }
+\title{Caracterização e Classificação do Tráfego da Darknet com
+ Modelos Baseados em Árvores de Decisão}
+\author{Gustavo Lopes \and Lucas Santiago \and Rafael Mesquita \and Rafael Amauri }
 \institute{Pontifícia Universidade Católica de Minas Gerais}
-\date{26 de Março de 2021}
+\date{21 de Fevereiro de 2022}
 % ---
 
 % ----------------- INÍCIO DO DOCUMENTO --------------------------------------
@@ -73,48 +74,28 @@
 
     \import{./seccoes}{tabela_de_conteudos.tex}
 
-    % ----------------- INTRODUCAO --------------------------------
+    % ----------------- MOTIVACAO --------------------------------
 
-    \section{Introdução}
+    \section{Motivação}
 
-    \import{./seccoes/introducao}{introducao.tex}
+    \import{./seccoes/motivacao}{1.tex}
 
-    \import{./seccoes/historico_da_linguagem}{versoes_lancadas.tex}
+    % ----------------- OBJETIVOS --------------------------------
+    \section{Objetivos}
 
-    \import{./seccoes/historico_da_linguagem}{versoes_lancadas2.tex}
+    \import{./seccoes/objetivos}{1.tex}
 
-    \import{./seccoes/historico_da_linguagem}{haskell_atualmente.tex}
+    % ----------------- MODELO --------------------------------
 
-    % ----------------- PARADIGMA --------------------------------
-    \section{Paradigma}
+    \section{Modelo}
 
-    \import{./seccoes/paradigma}{definicao.tex}
+    \import{./seccoes/modelo}{1.tex}
 
-    \import{./seccoes/paradigma}{imperativo_vs_declarativo.tex}
-    
-    \import{./seccoes/paradigma/funcional}{definicao.tex}
+    % ----------------- RESULTADOS DE SIMULACAO OU EXPERIMENTACAO --------------------------------
 
-    \import{./seccoes/paradigma/funcional}{caracteristicas.tex}
+    \section{Resultados de simulação ou experimentação}
 
-    \import{./seccoes/paradigma/funcional}{analise_critica.tex}
-
-    % ----------------- CARACTERISTICAS MAIS MARCANTES --------------------------------
-
-    \section{Características mais marcantes}
-
-    \import{./seccoes/caracteristicas_marcantes}{caracteristicas_marcantes.tex}
-
-    % ----------------- RELACAO COM OUTRAS LINGUAGENS --------------------------------
-
-    \section{Relacao com outras linguagens}
-
-    \import{./seccoes/relacao_com_outras_linguagens}{relacao_com_outras_linguagens.tex}
-
-    % ----------------- EXEMPLO DE PROGRAMAS --------------------------------
-
-    \section{Exemplo(s) de programa(s)}
-
-    \import{./seccoes/exemplo_de_programas}{exemplo_de_programas.tex}
+    \import{./seccoes/resultados_de_simulacao}{1.tex}
 
     % ----------------- CONCLUSAO --------------------------------
     \section{Considerações finais}
