@@ -1,9 +1,36 @@
 \begin{frame}
     \frametitle{Dados obtidos}
 
-    \begin{itemize}
-      \item Haskell vs Prolog
-      \item Haskell vs Elixir
-    \end{itemize}
+    \begin{table}[ht]
+      \centering
+      \caption{\textbf{Sumário das métricas de avaliação dos modelos}}
+      \begin{tabular}{|c|c|c|c|c|c|}
+        \hline 
+         & & \textbf{Precisão} & \textbf{Recall} & \textbf{F-score} & \textbf{10-fold} \\
+        \hline
+        \multirow{2}{*}{\textbf{Decision tree}} 
+            & \textbf{Benign} & \textbf{0.9994} & 0.9992 & \textbf{0.9993} & 99.89\% \\\cline{2-5}
+            & \textbf{Darknet} & 0.9964 & \textbf{0.9971} & \textbf{0.9967} &  \\\hline
+        \multirow{2}{*}{\textbf{Random Forest}} 
+            & \textbf{Benign} & 0.9989 & \textbf{0.9997} & \textbf{0.9993} & 99.90\% \\\cline{2-5}
+            & \textbf{Darknet} & \textbf{0.9987} & 0.9947 & \textbf{0.9967} &  \\\hline
+      \end{tabular}
+    \end{table}
 
+\end{frame}
+
+\begin{frame}
+  \begin{table}[ht]
+    \centering
+    \caption{\textbf{Comparação dos métodos para detecção e caracterização do tráfego}}
+    \begin{tabular}{|c|c|c|c|}
+      \hline 
+       & \textbf{Decision Tree} & \textbf{Random Forest} & \textbf{DIDarknet} \\
+      \hline 
+      \textbf{Detecção} & 99,01\% & 99,90\% & 94\% \\ 
+      \hline 
+      \textbf{Caracterização} & 99,03\% & 98,34\% & 86\% \\
+      \hline  
+    \end{tabular}
+  \end{table}
 \end{frame}
